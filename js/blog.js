@@ -5,9 +5,5 @@ document.getElementById('blog-btn').addEventListener('click', function (evnet) {
 
 
 
-document.getElementById('history-btn').addEventListener('click', function () {
-  console.log('click the')
-  window.location.href = '/history.html';
-});
 
 

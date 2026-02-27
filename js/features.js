@@ -1,7 +1,7 @@
 
 document.getElementById('Donate-btn').addEventListener('click', function (event){
     event.preventDefault();
-    console.log('clicked the button');
+    // console.log('clicked the button');
 
 
    const inputDonation = getInputFaielValueById('input-donation');
@@ -11,8 +11,8 @@ document.getElementById('Donate-btn').addEventListener('click', function (event)
 
     // console.log(inputDonation, donatinMoney, donationPrice);
      
-    if(isNaN(donationPrice)){
-        alert('Faield the donation Price . palce try again')
+    if(isNaN(inputDonation)){
+        alert('worang the donation Price . palce try again')
         return;
     }
      const donation  = document.getElementById('donation-price');
@@ -23,4 +23,11 @@ document.getElementById('Donate-btn').addEventListener('click', function (event)
 
     const price = inputDonation + donationPrice;
    document.getElementById('danation-price').innerText = price;
+
+//    add to transection history
+ const p = document.createElement('p');
+ p.innerText = `Added: ${inputDonation} Tk. Donation:${price}. `;
+ console.log(p);
+//  should be a common function
+document.getElementById('transection-container').appendChild(p);
 })
