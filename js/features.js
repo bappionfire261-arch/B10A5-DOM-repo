@@ -23,7 +23,7 @@ document.getElementById('Donate-btn').addEventListener('click', function (event)
 
     const price = inputDonation + donationPrice;
    document.getElementById('danation-price').innerText = price;
-
+     
 //    add to transection history
  const p = document.createElement('p');
  p.innerText = `Added: ${inputDonation} Tk. Donation:${price}. `;
